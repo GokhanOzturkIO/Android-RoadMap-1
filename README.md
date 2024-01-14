@@ -155,7 +155,7 @@ Androidv14 - Level34
 - Update shortcuts only when their meaning is retained
 - Check dynamic shortcuts whenever you launch your app
 
-====================================================================================
+===========================================================================
 
 # **2. App Navigation**
 
@@ -765,7 +765,7 @@ Androidv14 - Level34
 - Test the behavior changes
 - Configure log messages for package filtering
 
-====================================================================================
+===========================================================================
 
 # **3. Dependency Injection**
 
@@ -861,7 +861,7 @@ Androidv14 - Level34
 - Component dependencies with feature modules
 - Best practices
 
-====================================================================================
+===========================================================================
 
 # **4. App Startup**
 
