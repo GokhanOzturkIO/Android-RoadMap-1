@@ -1,15 +1,14 @@
 # Android-RoadMap-1 `v1.0.0-alpha01`
 
-Androidv14 - Level34
+**Androidv14 - Level34**
 
-# APP ARCHITECTURE - Basics
+## APP ARCHITECTURE - Basics
 
-# **1. App Entry Points**
+### **1. App Entry Points**
 
-## **1.1 ACTIVITIES**
+#### **1.1 ACTIVITIES**
 
-### **1.1.1 Introduction to activities**
-
+##### **1.1.1 Introduction to activities**
 - The concept of activities
 - Configuring the manifest
     - Declare activities
@@ -24,8 +23,7 @@ Androidv14 - Level34
     - onRestart()
     - onDestroy()
  
-### **1.1.2 The activity lifecycle**
-
+##### **1.1.2 The activity lifecycle**
 - Activity-lifecycle concepts
 - Lifecycle callbacks
     - onCreate()
@@ -38,21 +36,19 @@ Androidv14 - Level34
 - Activity state and ejection from memory
 - Saving and restoring transient UI state
     - Instance state
-    - Save simple, lightweight UI state using onSaveInstanceState()
+    - Save simple, lightweight UI state using onSaveInstanceState()
     - Restore activity UI state using saved instance state
 - Navigating between activities
     - Starting one activity from another
  
-### **1.1.3 Activity state changes**
-
+##### **1.1.3 Activity state changes**
 - Configuration change occurs
     - Handle multi-window cases
 - Activity or dialog appears in foreground
 - User taps or gestures Back
 - System kills app process
 
-### **1.1.4 Test your app's activities**
-
+##### **1.1.4 Test your app's activities**
 - Drive an activity's state
     - Create an activity
     - Drive the activity to a new state
@@ -61,8 +57,7 @@ Androidv14 - Level34
     - Retrieve activity results
     - Trigger actions in the activity
 
-### **1.1.5 Tasks and the back stack**
-
+##### **1.1.5 Tasks and the back stack**
 - Lifecycle of a task and its back stack
     - Back tap behavior for root launcher activities
     - Background and foreground tasks
@@ -75,15 +70,13 @@ Androidv14 - Level34
     - Clear the back stack
     - Start a task
 
-### **1.1.6 Processes and app lifecycle**
+##### **1.1.6 Processes and app lifecycle**
 
-### **1.1.7 Parcelables and bundles**
-
+##### **1.1.7 Parcelables and bundles**
 - Sending data between activities
 - Sending data between processes
 
-### **1.1.8 Loaders**
-
+##### **1.1.8 Loaders**
 - Loader API summary
 - Use loaders in an application
     - Start a loader
@@ -91,8 +84,7 @@ Androidv14 - Level34
     - Use the LoaderManager callbacks
 - Example
 
-### **1.1.9 Recents screen**
-
+##### **1.1.9 Recents screen**
 - Add tasks to the Recents screen
     - Use the Intent flag to add a task
     - Use the activity attribute to add a task
@@ -101,21 +93,18 @@ Androidv14 - Level34
     - Retain finished tasks
 - Enable recents URL sharing (Pixel only)
 
-### **1.1.10 Restrictions on starting activities from the background**
-
+##### **1.1.10 Restrictions on starting activities from the background**
 - Display notifications instead
 - When apps can start activities
 
-## **1.2 APP SHORTCUTS**
+#### **1.2 APP SHORTCUTS**
 
-### **1.2.1 About Shortcut**
-
+##### **1.2.1 About Shortcut**
 - Shortcut types
 - Display shortcuts in assistants using capabilities
 - Shortcut limitations
 
-### **1.2.2 Create shortcuts**
-
+##### **1.2.2 Create shortcuts**
 - Create static shortcuts
     - Customize attribute values
     - Configure inner elements
@@ -125,13 +114,11 @@ Androidv14 - Level34
     - Create a custom shortcut activity
 - Test shortcuts
 
-### **1.2.3 Add capabilities to shortcuts**
-
+##### **1.2.3 Add capabilities to shortcuts**
 - Define capabilities in shortcuts.xml
 - Associate shortcuts with a capability
 
-### **1.2.4 Manage shortcuts**
-
+##### **1.2.4 Manage shortcuts**
 - Shortcut behavior
     - Shortcut visibility
     - Shortcut display order
@@ -146,8 +133,7 @@ Androidv14 - Level34
 - Rate limiting
 - Backup and restore
 
-### **1.2.5 Best practices for shortcuts**
-
+##### **1.2.5 Best practices for shortcuts**
 - Follow the design guidelines
 - Publish only four distinct shortcuts
 - Limit shortcut description length
@@ -155,35 +141,31 @@ Androidv14 - Level34
 - Update shortcuts only when their meaning is retained
 - Check dynamic shortcuts whenever you launch your app
 
-===========================================================================
+---
 
-# **2. App Navigation**
+### **2. App Navigation**
 
-### **2.1 Principles of navigation**
-
+#### **2.1 Principles of navigation**
 - Fixed start destination
 - Navigation state is represented as a stack of destinations
 - Up and Back are identical within your app's task
 - The Up button never exits your app
 - Deep linking simulates manual navigation
 
-## **2.2 FRAGMENTS**
+#### **2.2 FRAGMENTS**
 
-### **2.2.1 About Fragments**
-
+##### **2.2.1 About Fragments**
 - Fragments
 - Modularity
 
-### **2.2.2 Create a fragment**
-
+##### **2.2.2 Create a fragment**
 - Setup your environment
 - Create a fragment class
 - Add a fragment to an activity
     - Add a fragment via XML
     - Add a fragment via XML
 
-### **2.2.3 Fragment manager**
-
+##### **2.2.3 Fragment manager**
 - Access the FragmentManager
     - Child fragments
 - Use the FragmentManager
@@ -194,8 +176,7 @@ Androidv14 - Level34
 - Provide dependencies to your fragments
     - Test with FragmentFactory
 
-### **2.2.4 Fragment transactions**
-
+##### **2.2.4 Fragment transactions**
 - Allow reordering of fragment state changes
 - Adding and removing fragments
     - Commit is asynchronous
@@ -204,29 +185,25 @@ Androidv14 - Level34
 - Showing and hiding fragment's views
 - Attaching and detaching fragments
 
-### **2.2.5 Navigate between fragments using animations**
-
+##### **2.2.5 Navigate between fragments using animations**
 - Set animations
 - Set transitions
 - Use shared element transitions
 - Postponing transitions
-- Use shared element transitions with a RecyclerView
+- Use shared element transitions with a RecyclerView
 
-### **2.2.6 Fragment lifecycle**
-
+##### **2.2.6 Fragment lifecycle**
 - Fragments and the fragment manager
 - Fragment lifecycle states and callbacks
     - Upward state transitions
     - Downward state transitions
 
-### **2.2.7 Saving state with fragments**
-
+##### **2.2.7 Saving state with fragments**
 - View state
 - SavedState
 - NonConfig
 
-### **2.2.8 Communicate with fragments**
-
+##### **2.2.8 Communicate with fragments**
 - Share data using a ViewModel
     - Share data with the host activity
     - Share data between fragments
@@ -235,8 +212,7 @@ Androidv14 - Level34
     - Pass results between parent and child fragments
     - Receive results in the host activity
 
-### **2.2.9 Working with the AppBar**
-
+##### **2.2.9 Working with the AppBar**
 - Activity-owned app bar
     - Register with activity
     - Inflate the menu
@@ -248,15 +224,13 @@ Androidv14 - Level34
     - Dynamically modify the menu
     - Add a navigation icon
  
-### **2.2.10 Display dialogs with DialogFragment**
-
+##### **2.2.10 Display dialogs with DialogFragment**
 - Create a DialogFragment
 - Show the DialogFragment
 - DialogFragment lifecycle
 - Use custom views
 
-### **2.2.11 Debug your fragments**
-
+##### **2.2.11 Debug your fragments**
 - FragmentManager logging
     - DEBUG logging
     - VERBOSE logging
@@ -268,8 +242,7 @@ Androidv14 - Level34
     - Target fragment usage
     - Wrong fragment container
 
-### **2.2.12 Test your fragments**
-
+##### **2.2.12 Test your fragments**
 - Declaring dependencies
 - Create a fragment
 - Provide dependencies
@@ -278,25 +251,21 @@ Androidv14 - Level34
 - Interacting with UI fragments
 - Test dialog actions
 
+#### **2.3 Navigation Component**
 
-## **2.3 Navigation Component**
-
-### **2.3.1 Navigation Overview**
-
+##### **2.3.1 Navigation Overview**
 - Key concepts
 - Benefits and features
 - Set up your environment
 
-### **2.3.2 Navigation Controller**
-
+##### **2.3.2 Navigation Controller**
 - Create a navigation controller
 - Compose
 - Views
 
-## ****2.3.3 Design Your Navigation Graph****
+##### ****2.3.3 Design Your Navigation Graph****
 
-### **2.3.3.1 Navigation Graph Overview**
-
+###### **2.3.3.1 Navigation Graph Overview**
 - Destination types
     - Frameworks
 - Compose
@@ -307,37 +276,32 @@ Androidv14 - Level34
     - Editor
 - Nested graphs
 
-### **2.3.3.2 Dialog destinations**
-
+###### **2.3.3.2 Dialog destinations**
 - Dialog composable
 - Kotlin DSL
 - XML
 
-### **2.3.3.3 Activity destinations**
-
+###### **2.3.3.3 Activity destinations**
 - Compose and Kotlin DSL
 - XML
 - Dynamic arguments
 
-### **2.3.3.4 Nested graphs**
-
+###### **2.3.3.4 Nested graphs**
 - Example
 - Compose
     - Extension functions
 - XML
     - Reference other navigation graphs with include
 
-### **2.3.3.5 Deeplinks**
-
+###### **2.3.3.5 Deeplinks**
 - Create a deep link for a destination
 - Create an explicit deep link
 - Create an implicit deep link
 - Handling deep links
 
-### **2.3.3.6 New destination types**
+###### **2.3.3.6 New destination types**
 
-### **2.3.3.7 Type safety in Kotlin DSL and Navigation Compose**
-
+###### **2.3.3.7 Type safety in Kotlin DSL and Navigation Compose**
 - Split your navigation graph
 - Type safe navigation
     - Navigate to a destination
@@ -345,15 +309,13 @@ Androidv14 - Level34
 - Assemble the navigation graph
 - Type safety in nested navigation graphs
 
-### **2.3.3.8 Global Actions**
-
+###### **2.3.3.8 Global Actions**
 - Use Navigation actions and Fragments
 - Examples
     - Navigate using an action
 - Global actions
 
-### **2.3.3.9 Build a graph programmatically using the Kotlin DSL**
-
+###### **2.3.3.9 Build a graph programmatically using the Kotlin DSL**
 - Dependencies
 - Building a graph
     - Hosting a Kotlin DSL Nav Graph
@@ -369,8 +331,7 @@ Androidv14 - Level34
 - Deep links
 - Limitations
 
-### **2.3.3.10 Navigation Editor**
-
+###### **2.3.3.10 Navigation Editor**
 - Overview
 - Add destinations
     - Create a destination from an existing fragment or activity
@@ -380,10 +341,9 @@ Androidv14 - Level34
 - Connect destinations
 - Placeholder destinations
 
-## ****2.3.4 Use Your Navigation Graph****
+##### ****2.3.4 Use Your Navigation Graph****
 
-### **2.3.4.1 Navigate to a destination**
-
+###### **2.3.4.1 Navigate to a destination**
 - Use a NavController
 - Navigate
 - Navigate to a composable
@@ -392,21 +352,18 @@ Androidv14 - Level34
 - Navigate using plinkrepLinkRequest
     - Actions and MIME types
 
-### **2.3.4.2 Navigate with options**
-
+###### **2.3.4.2 Navigate with options**
 - Options with Compose
 - Options with XML
     - Apply options programmatically
 
-### **2.3.4.3 Safe Args**
-
+###### **2.3.4.3 Safe Args**
 - Enable Safe Args
 - Generated code
 - Safe Args example
 - Ensure type safety by using Safe Args
 
-### **2.3.4.4 Pass data between destinations**
-
+###### **2.3.4.4 Pass data between destinations**
 - Define destination arguments
     - Supported argument types
     - Override a destination argument in an action
@@ -418,19 +375,16 @@ Androidv14 - Level34
     - Use @Keep annotations
     - Use keepnames rules
 
-### **2.3.4.5 Animate transitions between destinations**
-
+###### **2.3.4.5 Animate transitions between destinations**
 - Add shared element transitions between destinations
     - Shared element transitions to a fragment destination
     - Shared element transitions to an activity destination
 - Apply pop animations to activity transitions
 
-### **2.3.4.6 Conditional navigation**
-
+###### **2.3.4.6 Conditional navigation**
 - User login
 
-### **2.3.4.7 Interact programmatically with the Navigation component**
-
+###### **2.3.4.7 Interact programmatically with the Navigation component**
 - Create a NavHostFragment
 - Reference a destination using NavBackStackEntry
 - Returning a result to the previous Destination
@@ -438,10 +392,9 @@ Androidv14 - Level34
 - Share UI-related data between destinations with ViewModel
 - Modifying inflated navigation graphs
 
-## ****2.3.5 The Back Stack****
+##### ****2.3.5 The Back Stack****
 
-### **2.3.5.1 Overview**
-
+###### **2.3.5.1 Overview**
 - Basic behavior
 - Pop back
     - Pop back to a particular destination
@@ -452,29 +405,25 @@ Androidv14 - Level34
     - Compose Examples
 - Pop using actions
 
-### **2.3.5.2 Dialogs and the back stack**
-
+###### **2.3.5.2 Dialogs and the back stack**
 - Overview
 - Example
 
-### **2.3.5.3 Circular navigation and  the back stack**
-
+###### **2.3.5.3 Circular navigation and the back stack**
 - Scenario
 - Solution
     - Compose implementation
     - Views implementation
 
-### **2.3.5.4 Multiple back stacks**
-
+###### **2.3.5.4 Multiple back stacks**
 - Implement support automatically with NavigationUI
 - Implement support manually with underlying APIs
     - Navigation XML
     - NavOptions
 
-## ****2.3.6 Integration****
+##### ****2.3.6 Integration****
 
-### **2.3.6.1 Navigate with feature modules**
-
+###### **2.3.6.1 Navigate with feature modules**
 - Setup
 - Basic usage
 - Customize the progress fragment
@@ -484,14 +433,12 @@ Androidv14 - Level34
     - Navigating to an include-dynamic navigation graph
 - Limitations
 
-### **2.3.6.2 Multi-module projects**
-
-- The role of the `app` module
+###### **2.3.6.2 Multi-module projects**
+- The role of the `app` module
 - Navigation best practices for multi-module projects
 - Navigating across feature modules
 
-### **2.3.6.3 Connect UI components to NavController using NavigationUI**
-
+###### **2.3.6.3 Connect UI components to NavController using NavigationUI**
 - Top app bar
     - AppBarConfiguration
     - Create a Toolbar
@@ -504,8 +451,7 @@ Androidv14 - Level34
 - Listen for navigation events
     - Argument-based listeners
 
-### **2.3.7 Migrate to the Navigation Component**
-
+##### **2.3.7 Migrate to the Navigation Component**
 - Prerequisites
 - Move screen-specific UI logic out of activities
     - Introducing fragments
@@ -521,19 +467,21 @@ Androidv14 - Level34
     - Pass activity destination args to a start destination fragment
 - Combine activities
 
-### **2.3.8 Test Navigation**
-
+##### **2.3.8 Test Navigation**
 - Test fragment navigation
 - Test NavigationUI with FragmentScenario
 - Testing interactions with back stack entries
 
-## **2.4 Custom Back Navigation**
+#### **2.4 Custom Back Navigation**
 
 - Implement custom back navigation
-- Activity onBackPressed()
+- Activity onBackPressed()
 
-### **2.4.1 Predictive back gesture**
+# 2. User Interface and Navigation
 
+## 2.4 Predictive Back Gestures
+
+### 2.4.1 Predictive Back Gesture
 - Update an app that uses default back navigation
 - Update an app that uses custom back navigation
     - Migrate an AndroidX back navigation implementation
@@ -547,44 +495,38 @@ Androidv14 - Level34
     - Create single responsibility callbacks
 - Test the predictive back gesture animation
 
-### **2.4.2 Add support for predictive back animations**
-
+### 2.4.2 Add Support for Predictive Back Animations
 - Add custom in-app transitions and animations
     - Add custom transitions using the Progress API
     - Add custom activity transitions on Android 14 and higher
     - Add support for Predictive Back with fragments
 - Requirements
 
-## **2.5 Responsive Design**
+## 2.5 Responsive Design
 
-### **2.5.1 Handling configuration changes**
-
+### 2.5.1 Handling Configuration Changes
 - Responsive UI and navigation
 - Implementing global navigation in a responsive UI
 - Consider alternatives to split-view layouts
 - Destination names
 
-### **2.5.2 Design for different form factors**
-
+### 2.5.2 Design for Different Form Factors
 - Designing responsive content
 - Providing tailored user experiences
 
-## **2.6 Swipe Between Views**
+## 2.6 Swipe Between Views
 
-### **2.6.1 Create swipe views with tabs using ViewPager2**
-
+### 2.6.1 Create Swipe Views with Tabs Using ViewPager2
 - Implement Swipe Views
 - Add Tabs Using a TabLayout
 
-### **2.6.2 Create swipe views with tabs using ViewPager**
-
+### 2.6.2 Create Swipe Views with Tabs Using ViewPager
 - Implement swipe views
 - Add tabs using a TabLayout
 
-## **2.7 App Links**
+## 2.7 App Links
 
-### **2.7.1 About App Links**
-
+### 2.7.1 About App Links
 - Understand the different types of links
     - Deep links
     - Web links
@@ -592,18 +534,16 @@ Androidv14 - Level34
 - Add Android App Links
 - Manage and verify Android App Links
 
-### **2.7.2 Create Deep Links to App Content**
-
+### 2.7.2 Create Deep Links to App Content
 - Add intent filters for incoming links
 - Read data from incoming intents
 - Test your deep links
 
-### **2.7.3 Verify Android App Links**
-
+### 2.7.3 Verify Android App Links
 - Add intent filters for app links verification
     - Supporting app linking for multiple hosts
     - Supporting app linking for multiple subdomains
-    - Supporting app linking for multiple subdomains
+    - Check for multiple apps associated with the same domain
 - Declare website associations
     - Associating a website with multiple apps
     - Associating multiple websites with a single app
@@ -623,18 +563,16 @@ Androidv14 - Level34
     - Test example
 - Fix common implementation errors
 
-## **2.7.4 Create App Links for Instant Apps**
-
+### 2.7.4 Create App Links for Instant Apps
 - App links overview
 - How app links for instant apps are different
 - Other reminders when creating app links
 
-## **2.8 Interact with other apps**
+## 2.8 Interact with Other Apps
 
-### **2.8.1 About Interact with other apps**
+### 2.8.1 About Interact with Other Apps
 
-### **2.8.2 Intents and intent filters**
-
+### 2.8.2 Intents and Intent Filters
 - Intent types
 - Building an intent
     - Example explicit intent
@@ -653,8 +591,7 @@ Androidv14 - Level34
     - Data test
     - Intent matching
 
-### **2.8.3 Common intents**
-
+### 2.8.3 Common Intents
 - Alarm clock
     - Create an alarm
     - Create a timer
@@ -697,8 +634,7 @@ Androidv14 - Level34
     - Load a web URL
 - Verify intents with the Android Debug Bridge
 
-### **2.8.4 Sending the user to another app**
-
+### 2.8.4 Sending the User to Another App
 - Build an implicit intent
     - Associate intent actions with data
     - Add extras to an intent
@@ -708,41 +644,36 @@ Androidv14 - Level34
     - Complete example
 - Show an app chooser
 
-### **2.8.5 Get a result from an activity**
-
+### 2.8.5 Get a Result from an Activity
 - Register a callback for an activity result
 - Launch an activity for result
 - Receive an activity result in a separate class
 - Test
 - Create a custom contract
 
-### **2.8.6 Let other apps start your activity**
-
+### 2.8.6 Let Other Apps Start Your Activity
 - Add an intent filter
 - Handle the intent in your activity
 - Return a result
 
-### **2.8.7 Limit loading in on-device Android containers**
+### 2.8.7 Limit Loading in On-device Android Containers
 
-## ****2.8.8 Package visibility****
+### 2.8.8 Package Visibility
 
-### **2.8.8.1 About Package visibility**
+#### 2.8.8.1 About Package Visibility
 
-### **2.8.8.2 Know which packages are visible automatically**
-
+#### 2.8.8.2 Know Which Packages Are Visible Automatically
 - Types of apps that are visible automatically
 - System packages that are visible automatically
 
-### **2.8.8.3 Declare package visibility needs**
-
+#### 2.8.8.3 Declare Package Visibility Needs
 - Specific package names
     - Communicate with a host app in a library
 - Packages that match an intent filter signature
 - Packages that use a specific authority
 - All apps (not recommended)
 
-### **2.8.8.4 Fulfill common use cases while having limited package visibility**
-
+#### 2.8.8.4 Fulfill Common Use Cases While Having Limited Package Visibility
 - Open URLs
     - Open URLs in a browser or other app
     - Open URLs in Custom Tabs
@@ -760,31 +691,27 @@ Androidv14 - Level34
     - Show custom text selection actions
     - Show custom data rows for a contact
 
-### **2.8.8.5 Test package visibility behavior**
-
+#### 2.8.8.5 Test Package Visibility Behavior
 - Test the behavior changes
 - Configure log messages for package filtering
 
-===========================================================================
+---
 
-# **3. Dependency Injection**
+# 3. Dependency Injection
 
-### **3.1 Dependency injection**
-
+## 3.1 Dependency Injection
 - Fundamentals of dependency injection
     - What is dependency injection?
     - Automated dependency injection
 - Alternatives to dependency injection
 - Use Hilt in your Android app
 
-### **3.2 Manual dependency injection**
-
+## 3.2 Manual Dependency Injection
 - Basics of manual dependency injection
 - Managing dependencies with a container
 - Managing dependencies in application flows
 
-### **3.3 Dependency injection with Hilt**
-
+## 3.3 Dependency Injection with Hilt
 - Adding dependencies
 - Hilt application class
 - Inject dependencies into Android classes
@@ -802,20 +729,17 @@ Androidv14 - Level34
 - Inject dependencies in classes not supported by Hilt
 - Hilt and Dagger
 
-### **3.4 Hilt in multi-module apps**
-
+## 3.4 Hilt in Multi-Module Apps
 - Hilt in feature modules
 
-### **3.5 Use Hilt with other Jetpack libraries**
+## 3.5 Use Hilt with Other Jetpack Libraries
+- Inject ViewModel objects with Hilt
+    - @ViewModelScoped
+- Integration with the Jetpack navigation library
+- Integration with Jetpack Compose
+- Inject WorkManager with Hilt
 
-- **Inject ViewModel objects with Hilt**
-    - **@ViewModelScoped**
-- **Integration with the Jetpack navigation library**
-- **Integration with Jetpack Compose**
-- **Inject WorkManager with Hilt**
-
-### **3.6 Hilt testing guide**
-
+## 3.6 Hilt Testing Guide
 - Unit tests
 - End-to-end tests
     - Adding testing dependencies
@@ -827,19 +751,17 @@ Androidv14 - Level34
     - launchFragmentInContainer
     - Use an entry point before the singleton component is available
 
-### **3.7 Hilt and Dagger annotations cheat sheet**
+## 3.7 Hilt and Dagger Annotations Cheat Sheet
 
-## **3.8 Dagger**
+## 3.8 Dagger
 
-### **3.8.1 Dagger basics**
-
+### 3.8.1 Dagger Basics
 - Benefits of using Dagger
 - A simple use case in Dagger: Generating a factory
 - Dagger components
     - Scoping with Dagger
 
-### **3.8.2 Using Dagger in Android apps**
-
+### 3.8.2 Using Dagger in Android Apps
 - Best practices summary
 - Adding dependencies
 - Dagger in Android
@@ -855,16 +777,14 @@ Androidv14 - Level34
 - Working with Dagger modules
 - Assisted injection
 
-### **3.8.3 Using Dagger in multi-module apps**
-
+### 3.8.3 Using Dagger in Multi-Module Apps
 - Implementation with Dagger subcomponents
 - Component dependencies with feature modules
 - Best practices
 
-===========================================================================
+---
 
-# **4. App Startup**
-
+# 4. App Startup
 - Setup
 - Initialize components at app startup
     - Implement component initializers
